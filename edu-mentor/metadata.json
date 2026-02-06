@@ -1,0 +1,8 @@
+{
+  "name": "Edu Mentor",
+  "description": "Smart learning. Real results. A premium multi-page education platform with a dark luxury SaaS interface.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

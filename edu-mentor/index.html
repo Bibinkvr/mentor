@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edu Mentor | Premium Education Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              background: '#050508',
+              surface: '#0a0a12',
+              elevated: '#10101a',
+              gold: '#D4AF37',
+              'gold-glow': 'rgba(212,175,55,0.3)',
+              'gold-border': 'rgba(212,175,55,0.15)',
+              secondary: '#3B82F6',
+              card: 'rgba(255,255,255,0.03)',
+              'text-primary': '#FFFFFF',
+              'text-secondary': 'rgba(255,255,255,0.6)',
+              'text-tertiary': 'rgba(255,255,255,0.4)',
+            },
+            fontFamily: {
+              sans: ['Instrument Sans', 'sans-serif'],
+            },
+            spacing: {
+              'section': '120px',
+              'section-mobile': '60px',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #050508;
+        color: white;
+        margin: 0;
+        font-family: 'Instrument Sans', sans-serif;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.03);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(212, 175, 55, 0.15);
+      }
+      .gold-text-glow {
+        text-shadow: 0 0 10px rgba(212, 175, 55, 0.5);
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 6px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-track {
+        background: #050508;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb {
+        background: #10101a;
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+        background: #D4AF37;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.13.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
